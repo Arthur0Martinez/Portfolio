@@ -1,0 +1,65 @@
+.align{
+    display: flex;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    margin-top: 14rem;
+    margin-left: 15%;
+    min-width: 500px;
+    position: relative;
+}
+
+.presentation h1{
+    margin: 0.5rem 0.1rem;
+    font-size: 3.40rem;
+}
+.presentation h2{
+    margin: 0.1rem;
+    font-size: 2.5rem;
+}
+.circle{
+    display: flex;
+    justify-content: right;
+
+}
+
+.circle div{
+    width: 480.34px;
+    margin-left: 19rem;
+    margin-top: 1.5rem;
+    height: 680px;
+    overflow: visible;
+    
+    background: #DBC4AC;
+}
+.circle img{
+    object-fit: cover;
+    height: 400px;
+    width: 330px;
+    margin-top: 2.5rem;
+    margin-left: -12rem;
+    padding: 5rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.scroll{
+    display: flex;
+    margin-top: -2.7rem;
+    flex-direction: column;
+    align-items: center;
+}
+.scroll p{
+    font-size: 1.5rem;
+}
+.scroll div{
+    font-size: 1.5rem;
+}

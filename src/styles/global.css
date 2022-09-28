@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Lora";
+}
+html, body {
+    min-height: 100%;
+}
+body {
+    background: radial-gradient(at top left, rgb(249, 245, 240) 0%, #462e0138 100%);
+    background-repeat: no-repeat;
+}

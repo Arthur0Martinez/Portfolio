@@ -1,0 +1,148 @@
+.dev{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.booki{
+    display: flex;
+    align-items: flex-end;
+    margin: 2rem;
+    margin-left: 10rem;
+    margin-top: 20rem;
+}
+.ohMyFood{
+    display: flex;
+    align-items: flex-end;
+    margin: 2rem;
+    margin-right: 10rem;
+    margin-top: 20rem;
+}
+.kanap{
+    display: flex;
+    align-items: flex-end;
+    margin: 2rem;
+    margin-left: 10rem;
+    margin-top: 20rem;
+}
+.piiquante{
+    display: flex;
+    align-items: flex-end;
+    margin: 2rem;
+    margin-left: 10rem;
+    margin-top: 20rem;
+}
+.groupomania{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    margin-left: 10rem;
+    margin-top: 20rem;
+}
+
+
+.firstBackground{
+    width: 792px;
+    height: 157px;
+    right: -1px;
+    top: 175px;
+    margin-right: -2rem;
+
+    background: #DBC4AC;
+}
+.secondBackground{
+    width: 792px;
+    height: 157px;
+    right: -1px;
+    top: 175px;
+    margin-left: -2rem;
+    margin-top: 4rem;
+
+    background: #DBC4AC;
+}
+.thirdBackground{
+    width: 792px;
+    height: 157px;
+    right: -1px;
+    top: 175px;
+    margin-right: -2rem;
+
+    background: #DBC4AC;
+}
+.forthBackground{
+    width: 792px;
+    height: 157px;
+    right: -1px;
+    top: 175px;
+    margin-left: -2rem;
+    margin-top: 4rem;
+
+    background: #DBC4AC;
+}
+.fifthBackground{
+    width: 792px;
+    height: 157px;
+    right: -1px;
+    top: 175px;
+    margin-right: -2rem;
+
+    background: #DBC4AC;
+}
+
+.firstProjectName{
+    display: flex;
+    margin: 2rem;
+    margin-right: 4rem;
+    flex-direction: column;
+    min-width: 180px;
+}
+.secondProjectName{
+    display: flex;
+    margin: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 14rem;
+    flex-direction: column;
+}
+.thirdProjectName{
+    display: flex;
+    margin: 2rem;
+    margin-right: 4rem;
+    flex-direction: column;
+    min-width: 180px;
+}
+.forthProjectName{
+    display: flex;
+    margin: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 14rem;
+    flex-direction: column;
+}
+.fifthProjectName{
+    display: flex;
+    margin: 2rem;
+    margin-right: 4rem;
+    flex-direction: column;
+    min-width: 180px;
+}
+.firstProjectName h3, .secondProjectName h3, .thirdProjectName h3, .forthProjectName h3, .fifthProjectName h3, .technologie h3{
+    font-size: 2.5rem;
+}
+.firstProjectName h4, .secondProjectName h4, .thirdProjectName h4, .forthProjectName h4, .fifthProjectName h4{
+    font-size: 1.875rem;
+}
+
+.technologie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    margin-top: 20rem;
+}
+
+.technoList{
+    display: flex
+}
+.technoList p{
+    padding: 1.5rem;
+}
