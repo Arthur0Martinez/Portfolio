@@ -1,14 +1,283 @@
 .video{
     display: flex;
     align-items: flex-end;
-    margin: 2rem;
-    margin-left: 10rem;
-    margin-top: 20rem;
+    justify-content: flex-end;
+    margin-top: 15rem;
 }
 .photo{
     display: flex;
     align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: 10rem;
+}
+
+.videoPhotoOne{
+    background-color: #DBC4AC;
+    width: 60%;
+    height: 650px;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    right: -100px;
+}
+
+.videoPhotoTwo{
+    background-color: #DBC4AC;
+    width: 60%;
+    height: 650px;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.logiciel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    margin-top: 20rem;
+}
+
+.logiciel h3{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+
+}
+
+.logicielList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.logicielList img{
+    height: 15%;
+    width: 15%;
+    border: 0.7rem solid;
+    border-radius: 5%;
+    border-color: grey;
+    margin: 1rem;
+}
+
+.materiels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    margin-top: 6rem;
+    margin-bottom: -2rem;
+}
+
+.materiels h3{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.materielsList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+
+
+.materielsList img{
+    height: 15%;
+    width: 15%;
+    border: 0.7rem solid;
+    border-radius: 5%;
+    border-color: grey;
+    margin: 1rem;
+}
+
+.videoName{
+    display: flex;
     margin: 2rem;
     margin-right: 10rem;
-    margin-top: 20rem;
+    margin-bottom: 15rem;
+    flex-direction: column;
+    min-width: 375px;
+}
+
+.photoName{
+    display: flex;
+    margin: 2rem;
+    margin-left: 10rem;
+    margin-bottom: 15rem;
+    flex-direction: column;
+    min-width: 375px;
+
+}
+
+.videoName h3, .photoName h3{
+    font-size: 2.5rem;
+}
+
+.videoName h4, .photoName h4{
+    font-size: 1.875rem;
+}
+
+@media only screen and (max-width: 1270px) {
+    .video{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15rem;
+    }
+    .photo{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .videoPhotoOne, .videoPhotoTwo{
+        width: 100%;
+    }
+    .videoName{
+        display: flex;
+        margin: 0rem;
+        margin-right: 25rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        min-width: 375px;
+    }
+    
+    .photoName{
+        display: flex;
+        margin: 0rem;
+        margin-right: 25rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        min-width: 375px;
+    
+    }
+    .logiciel{
+        margin-top: 8rem;
+        margin-left: 0rem;
+        width: 100%;
+    }
+    .logicielList img{
+        height: 10%;
+        width: 10%;
+    }
+
+    .materiels{
+        margin-left: 0rem;
+        width: 100%;
+    }
+    .materielsList img{
+        height: 10%;
+        width: 10%;
+    }
+
+
+}
+
+@media only screen and (max-width: 930px) {
+
+    .video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8rem;
+        width: 100%;
+    }
+    .photo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8rem;
+        width: 100%;
+
+    }
+
+    .videoPhotoOne{
+        width: 100%;
+        max-width: 792px;        
+        height: 450px;
+        justify-content: center;
+        right: 0px;
+    }
+    
+    .videoPhotoTwo{
+        width: 100%;
+        max-width: 792px;
+        height: 450px;
+        justify-content: center;
+    }
+
+    .videoName{
+        flex-direction: column;
+        min-width: 0px;
+        margin: 1rem 0;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .photoName{
+        margin: 1rem 0;
+        align-items: center;
+        flex-direction: column;
+        min-width: 0px;
+    
+    }
+
+    .videoName h3, .photoName h3{
+        font-size: 2rem;
+    }
+    
+    .videoName h4, .photoName h4{
+        font-size: 1.3rem;
+    }
+
+
+    .logiciel{
+        margin: 1rem 0rem;
+        margin-top: 8rem;
+    }
+    
+    .logiciel h3{
+        font-size: 1.8rem;    
+    }
+    
+    .logicielList{
+        width: 100%;
+    }
+    
+    .logicielList img{
+        height: 30%;
+        width: 30%;
+        border: 0.05rem solid;
+        margin: 1rem;
+        max-width: 200px;
+    }
+    
+    .materiels{
+        margin: 1rem 0rem;
+        margin-top: 8rem;
+        margin-bottom: 0rem;
+    }
+    
+    .materiels h3{
+        font-size: 1.8rem;
+    }
+    
+    .materielsList{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    
+    
+    .materielsList img{
+        height: 30%;
+        width: 30%;
+        border: 0.05rem solid;
+        margin: 1rem;
+        max-width: 200px;
+    }
+
 }

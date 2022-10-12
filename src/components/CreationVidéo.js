@@ -11,33 +11,37 @@ export default function CreationVideo() {
                     <h3>Mes projets vidéo</h3>
                     <h4>Fiction, documentaire</h4>
                 </div>
-                <p>Vidéo/Photo</p>
+                <div className={styles.videoPhotoOne}></div>
             </article>
 
             <article className={styles.photo}>
-                <p>Vidéo/Photo</p>
-                <div className={styles.videoName}>
+            <div className={styles.videoPhotoTwo}></div>
+                <div className={styles.photoName}>
                     <h3>Mes projets photo</h3>
                     <h4>Portrait, paysage</h4>
                 </div>
             </article>
 
-            <article>
+            <article className={styles.logiciel}>
                 <h3>Logiciels maitrisés</h3>
-                <p>Techno</p>
-                <p>Techno</p>
-                <p>Techno</p>
-                <p>Techno</p>
-                <p>Techno</p>
+                <div className={styles.logicielList}>
+                    <img src='exemple.jpg'></img>
+                    <img src='exemple.jpg'></img>
+                    <img src='exemple.jpg'></img>
+                    <img src='exemple.jpg'></img>
+                    <img src='exemple.jpg'></img>
+                </div>
             </article>
 
-            <article>
+            <article className={styles.materiels}>
                 <h3>Matériels connus</h3>
-                <p>Techno</p>
-                <p>Techno</p>
-                <p>Techno</p>
-                <p>Techno</p>
-                <p>Techno</p>
+                <div className={styles.materielsList}>
+                    <img src='exemple.jpg'></img>
+                    <img src='exemple.jpg'></img>
+                    <img src='exemple.jpg'></img>
+                    <img src='exemple.jpg'></img>
+                    <img src='exemple.jpg'></img>
+                </div>
             </article>
 
         </section>

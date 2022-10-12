@@ -1,3 +1,63 @@
+@keyframes arriveTop {
+    0% {
+        transform: translateY(-10vh);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes arriveBottom {
+    0% {
+        transform: translateY(2vh);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes arriveLeft {
+    0% {
+        transform: translateX(-2vh);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes arriveRight {
+    0% {
+        transform: translateX(2vh);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes arriveRightImage {
+    0% {
+        transform: translateX(25vh);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
 .align{
     display: flex;
 }
@@ -5,6 +65,7 @@
 .presentation{
     display: flex;
     flex-direction: column;
+    animation: arriveTop 1s ease-in-out;
     margin-top: 14rem;
     margin-left: 15%;
     min-width: 500px;
@@ -22,11 +83,13 @@
 .circle{
     display: flex;
     justify-content: right;
+    overflow: hidden;
 
 }
 
 .circle div{
     width: 480.34px;
+    animation: arriveRightImage 0.9s ease-in-out;
     margin-left: 19rem;
     margin-top: 1.5rem;
     height: 680px;
@@ -45,10 +108,89 @@
 
 .navbar{
     display: flex;
+    animation: arriveLeft 0.5s ease-in-out;
     flex-direction: column;
     position: absolute;
     top: 20px;
     left: 40px;
+}
+.first, .second, .third{
+    position: relative;
+}
+
+.first{
+    color: #716040;
+    transform: rotate(90deg);
+    width: 15%;
+    font-size: 1.6rem;
+    margin: 2rem 0rem 10rem 0rem;
+}
+
+.second{
+    color: #716040;
+    transform: rotate(90deg);
+    width: 15%;
+    font-size: 1.6rem;
+    margin: 2rem 0rem 10rem 0rem;
+}
+
+.third{
+    color: #716040;
+    transform: rotate(90deg);
+    width: 15%;
+    font-size: 1.6rem;
+    margin: 2rem 0rem 10rem 0rem;
+}
+
+.first::after, .second::after, .third::after {
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 0;
+    height: 0.2rem; 
+    background: #DBC4AC;
+    z-index: -1;
+    opacity: .9;
+    transition: transform .4s;
+}
+
+.first:hover::after{
+    transform: scaleX(8.6);
+}
+
+.second:hover::after{
+    transform: scaleX(7.3);
+}
+
+.third:hover::after{
+    transform: scaleX(5.75);
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 8px, 0);
+    }
+}
+  
+@-webkit-keyframes bounce {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 8px, 0);
+        transform: translate3d(0, 8px, 0);
+    }
+}
+
+.arriveScroll{
+    animation: arriveBottom 0.4s ease-in-out;
 }
 
 .scroll{
@@ -56,10 +198,163 @@
     margin-top: -2.7rem;
     flex-direction: column;
     align-items: center;
+    color: black;
+    animation-name: bounce;
+    animation-duration: 1.2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+
 }
+
+.scroll:hover {
+    transition: 300ms;
+    animation-play-state: paused;
+}
+
 .scroll p{
     font-size: 1.5rem;
 }
+
 .scroll div{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+
+}
+
+@media only screen and (max-width: 1050px) {
+    .circle img{
+        margin-right: -5rem;
+    }
+    .scroll{
+        margin-top: -5.3rem;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .align{
+        flex-direction: column;
+    }
+
+    .presentation{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        animation: arriveTop 1s ease-in-out;
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        width: 100%;
+        min-width: 1px;
+        position: relative;
+    }
+    .presentation h1{
+        margin: 0.2rem 0rem;
+        font-size: 2rem;
+    }
+    .presentation h2{
+        margin: 0rem 0rem 0.2rem 0;
+        font-size: 1.2rem;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: arriveTop 0.8s ease-in-out;
+        flex-direction: row;
+        width: 100%;
+        left: 0;
+        top: 500px;
+    }
+    .first, .second, .third{
+        position: relative;
+        color: black;
+    }
+    
+    .first{
+        transform: rotate(0deg);
+        width: auto;
+        font-size: 1.1rem;
+        margin: 1rem;
+    }
+    
+    .second{
+        transform: rotate(0deg);
+        width: auto;
+        font-size: 1.1rem;
+        margin: 1rem;
+    }
+    
+    .third{
+        transform: rotate(0deg);
+        width: auto;
+        font-size: 1.1rem;
+        margin: 1rem;
+    }
+    
+    .first::after, .second::after, .third::after {
+        content: '';
+        transform-origin: 0 0; 
+        transform: scaleX(0);
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        right: 0;
+        height: 0.2rem; 
+        background: #DBC4AC;
+        z-index: -1;
+        opacity: .9;
+        transition: transform .4s;
+    }
+    
+    .first:hover::after{
+        transform: scaleX(0);
+    }
+    
+    .second:hover::after{
+        transform: scaleX(0);
+    }
+    
+    .third:hover::after{
+        transform: scaleX(0);
+    }
+
+    .circle{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    
+    }
+    
+    .circle div{
+        width: 280.34px;
+        animation: arriveRightImage 0.9s ease-in-out;
+        margin-left: 0rem;
+        margin-top: -8.5rem;
+        height: 660px;
+        overflow: visible;
+        
+        background: #DBC4AC;
+    }
+    .circle img{
+        object-fit: cover;
+        height: 350px;
+        width: 500px;
+        margin-top: 10rem ;
+        margin-left: -39%;
+        padding: 0rem;
+    }
+    .scroll {
+        margin-top: -4.3rem;
+
+    }
+    .scroll p{
+        font-size: 0.8rem;
+    }
+    
+    .scroll div{
+        font-size: 1rem;
+    
+    }    
 }
