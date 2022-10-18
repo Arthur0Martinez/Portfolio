@@ -1,10 +1,64 @@
+@keyframes arriveTop {
+    0% {
+        transform: translateY(-15vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes arriveBottom {
+    0% {
+        transform: translateY(15vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes arriveLeft {
+    0% {
+        transform: translateX(-15vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes arriveRight {
+    0% {
+        transform: translateX(15vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes arrive {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
 .dev{
     display: flex;
     flex-direction: column;
 }
 
 
-.booki{
+#booki{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -12,24 +66,24 @@
 }
 
 
-.ohMyFood{
+#ohMyFood{
     display: flex;
     align-items: center;
     margin-top: 45rem;
 }
-.kanap{
+#kanap{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 20rem;
 }
-.piiquante{
+#piiquante{
     display: flex;
     align-items: flex-end;
     margin-right: 10rem;
     margin-top: 25rem;
 }
-.groupomania{
+#groupomania{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -37,28 +91,28 @@
     margin-top: 25rem;
 }
 @media only screen and (max-width: 1270px) {
-    .booki{
+    #booki{
         flex-direction: column;
         margin-top: 8rem;
         margin-left: 11.3rem;
         align-items: center;
 
     }
-    .ohMyFood{
+    #ohMyFood{
         flex-direction: column-reverse;
         margin-top: 14rem;
     }
-    .kanap{
+    #kanap{
         flex-direction: column;
         align-items: center;
         margin-top: 25rem;
     }
-    .piiquante{
+    #piiquante{
         flex-direction: column;
         align-items: flex-start;
         margin-top: 30rem;
     }
-    .groupomania{
+    #groupomania{
         flex-direction: column;
         align-items: center;
         margin-top: 25rem;
@@ -177,7 +231,7 @@
     font-size: 1.875rem;
 }
 
-.technologie{
+#technologie{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,7 +239,7 @@
     margin-top: 20rem;
 }
 
-.technologie h3{
+#technologie h3{
     margin: 1rem 0;
     font-size: 2.5rem;
 }
@@ -231,6 +285,7 @@
     width: 650px;
     right: 230px;
     bottom: -110px;
+    animation: arriveLeft ease-in-out infinite alternate 7s;
 }
 
 .bookiImgThird{
@@ -239,6 +294,7 @@
     width: 250px;
     right: 690px;
     bottom: -90px;
+    animation: arriveRight ease-in-out infinite alternate 7s;
 }
 
 
@@ -248,6 +304,7 @@
     width: 371px;
     left: 0px;
     bottom: 0px;
+    animation: arriveBottom ease-in-out infinite alternate 7s;
 }
 
 .ohMyFoodImgSecond{
@@ -256,6 +313,7 @@
     width: 500px;
     left: 280px;
     bottom: 280px;
+    animation: arriveLeft ease-in-out infinite alternate 7s;
 }
 
 .ohMyFoodImgThird{
@@ -264,6 +322,7 @@
     width: 280px;
     left: 520px;
     bottom: -50px;
+    animation: arriveTop ease-in-out infinite alternate 7s;
 }
 
 .kanapImgFirst{
@@ -281,6 +340,8 @@
     width: 400px;
     right: 140px;
     bottom: 280px;
+    animation: arriveLeft ease-in-out infinite alternate 7s;
+
 }
 
 .kanapImgThird{
@@ -290,6 +351,7 @@
     right: 210px;
     bottom: -140px;
     z-index: 11;
+    animation: arriveRight ease-in-out infinite alternate 7s;
 }
 
 .piiquanteImgFirst{
@@ -305,7 +367,8 @@
     height: 500px;
     width: 300px;
     left: 300px;
-    bottom: -180px
+    bottom: -180px;
+    animation: arriveLeft ease-in-out infinite alternate 7s;
 }
 
 .groupomaniaImgFirst{
@@ -315,6 +378,7 @@
     left: 50px;
     bottom: -110px;
     z-index: 10;
+    animation: arriveLeft ease-in-out infinite alternate 7s;
 }
 
 .groupomaniaImgSecond{
@@ -333,6 +397,7 @@
     right: 50px;
     bottom: -110px;
     z-index: 10;
+    animation: arriveRight ease-in-out infinite alternate 7s;
 }
 
 @media only screen and (max-width: 1270px) {
@@ -345,29 +410,29 @@
 }
 
 @media only screen and (max-width: 930px) {
-    .booki{
+    #booki{
         flex-direction: column;
         margin-top: 8rem;
         margin-left: 0rem;
         align-items: center;
 
     }
-    .ohMyFood{
+    #ohMyFood{
         flex-direction: column-reverse;
         margin-top: 8rem;
     }
-    .kanap{
+    #kanap{
         flex-direction: column;
         align-items: center;
         margin-top: 8rem;
     }
-    .piiquante{
+    #piiquante{
         flex-direction: column-reverse;
         align-items: center;
         margin-top: 8rem;
         margin-right: 0rem;
     }
-    .groupomania{
+    #groupomania{
         flex-direction: column;
         align-items: center;
         margin-top: 8rem;

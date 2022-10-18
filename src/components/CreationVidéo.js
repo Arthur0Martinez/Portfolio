@@ -6,7 +6,7 @@ export default function CreationVideo() {
     return(
         <section className={styles.creationVideo}>
 
-            <article className={styles.video}>
+            <article data-sal="fade" className={styles.video}>
                 <div className={styles.videoName}>
                     <h3>Mes projets vidéo</h3>
                     <h4>Fiction, documentaire</h4>
@@ -14,7 +14,7 @@ export default function CreationVideo() {
                 <div className={styles.videoPhotoOne}></div>
             </article>
 
-            <article className={styles.photo}>
+            <article data-sal="fade" className={styles.photo}>
             <div className={styles.videoPhotoTwo}></div>
                 <div className={styles.photoName}>
                     <h3>Mes projets photo</h3>
@@ -22,25 +22,25 @@ export default function CreationVideo() {
                 </div>
             </article>
 
-            <article className={styles.logiciel}>
+            <article data-sal="fade" className={styles.logiciel}>
                 <h3>Logiciels maitrisés</h3>
                 <div className={styles.logicielList}>
-                    <img src='exemple.jpg'></img>
-                    <img src='exemple.jpg'></img>
-                    <img src='exemple.jpg'></img>
-                    <img src='exemple.jpg'></img>
-                    <img src='exemple.jpg'></img>
+                    <img src='LogicielCine/Audition.png'></img>
+                    <img src='LogicielCine/Lightroom.png'></img>
+                    <img src='LogicielCine/Illustrator.png'></img>
+                    <img src='LogicielCine/PremierePro.png'></img>
+                    <img src='LogicielCine/Photoshop.png'></img>
                 </div>
             </article>
 
-            <article className={styles.materiels}>
+            <article data-sal="fade" className={styles.materiels}>
                 <h3>Matériels connus</h3>
                 <div className={styles.materielsList}>
-                    <img src='exemple.jpg'></img>
-                    <img src='exemple.jpg'></img>
-                    <img src='exemple.jpg'></img>
-                    <img src='exemple.jpg'></img>
-                    <img src='exemple.jpg'></img>
+                    <img src='MatérielCine/Canon.jpg'></img>
+                    <img src='MatérielCine/Neewer.png'></img>
+                    <img src='MatérielCine/Nikon.png'></img>
+                    <img src='MatérielCine/Pentax.png'></img>
+                    <img src='MatérielCine/Rode.jpg'></img>
                 </div>
             </article>
 
